@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+:root {
+  --font-size-var: 0.25rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: black;
+}
+.xxs {
+  font-size: calc(var(--font-size-var) * 4);
+}
+.xs {
+  font-size: calc(var(--font-size-var) * 5);
+}
+.s {
+  font-size: calc(var(--font-size-var) * 6);
+}
+.m {
+  font-size: calc(var(--font-size-var) * 7);
+}
+.l {
+  font-size: calc(var(--font-size-var) * 8);
+}
+.xl {
+  font-size: calc(var(--font-size-var) * 9);
+}
+.xxl {
+  font-size: calc(var(--font-size-var) * 10);
+}
+.xxxl {
+  font-size: calc(var(--font-size-var) * 16);
+}
+.logo {
+  height: 50px;
+  width: 200px;
+}
+.control {
+  max-width: 90px;
+  max-height: 70px;
+}
+.contact-button {
+  max-width: 300px;
+}
