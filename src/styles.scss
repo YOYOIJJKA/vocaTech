@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --font-size-var: 0.25rem;
 }
@@ -11,6 +13,11 @@ body {
 }
 body {
   margin: 0;
+}
+.jost {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: black;
 }
 .montserrat {
   font-family: "Montserrat", sans-serif;
@@ -45,10 +52,20 @@ body {
   height: 50px;
   width: 200px;
 }
+.big-logo {
+  height: 100px;
+  width: 400px;
+}
 .control {
   max-width: 90px;
   max-height: 70px;
 }
 .contact-button {
   max-width: 300px;
+}
+.grey {
+  color: #5D525A;
+}
+.half {
+  width: 50%;
 }

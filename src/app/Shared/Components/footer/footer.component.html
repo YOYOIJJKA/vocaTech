@@ -1,1 +1,59 @@
-<p>footer works!</p>
+<footer>
+  <div class="half">
+    <form class="s jost">
+      <div class="form-field">
+        <div class="column">
+          <label>Ваше имя*</label>
+          <mat-form-field>
+            <input matInput placeholder="Иван" />
+          </mat-form-field>
+
+          <label>Ваш email*</label>
+          <mat-form-field>
+            <input type="email" matInput placeholder="_____________@___" />
+          </mat-form-field>
+          <p class="xxs grey">
+            В первую очередь обрабатываются заявки с указанием корпоративной
+            электронной почты
+          </p>
+
+          <label>ИНН компании*</label>
+          <mat-form-field>
+            <input matInput type="text" />
+          </mat-form-field>
+        </div>
+
+        <div class="column">
+          <label>Ваш номер телефона*</label>
+          <mat-form-field>
+            <span matTextPrefix>+7 &nbsp;</span>
+            <input type="tel" matInput placeholder="(___) ___ __ __" />
+          </mat-form-field>
+
+          <label>Количество устройств*</label>
+          <mat-form-field>
+            <input type="number" matInput />
+          </mat-form-field>
+        </div>
+      </div>
+
+      <section>
+        <mat-checkbox style="padding: 0">
+          <span class="grey s jost"
+            >Я даю согласие на обработку персональных данных согласно политике
+            конфиденциальности</span
+          >
+        </mat-checkbox>
+      </section>
+      <p class="jost grey s">* Поле обязательного ввода</p>
+
+      <button mat-flat-button class="contact-button" color="secondary">
+        <span class="s">Связаться с нами</span>
+      </button>
+    </form>
+  </div>
+  <div class="logo-container half">
+    <img class="big-logo" src="assets/logo.png" />
+    <p class="m">Ваш проводник в мир речевой аналитики</p>
+  </div>
+</footer>

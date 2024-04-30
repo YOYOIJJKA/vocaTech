@@ -15,6 +15,9 @@ import { AdvantagesComponent } from './Pages/Components/advantages/advantages.co
 import { BuissnessSolutionsComponent } from './Pages/Components/buissness-solutions/buissness-solutions.component';
 import { SetOfSolutionsComponent } from './Pages/Components/set-of-solutions/set-of-solutions.component';
 import { ClientsComponent } from './Pages/Components/friends/clients/clients.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import { ClientsComponent } from './Pages/Components/friends/clients/clients.com
     AppRoutingModule,
     MatExpansionModule,
     MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatCheckboxModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
