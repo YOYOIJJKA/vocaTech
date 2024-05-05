@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-
-interface content {
-  label: string;
-  elementId: string;
-}
+import { CONTENT } from '../../constants';
 
 @Component({
   selector: 'app-header',
@@ -13,26 +9,5 @@ interface content {
 export class HeaderComponent {
   panelOpenState: boolean = false;
 
-  content: content[] = [
-    {
-      label: 'О нас',
-      elementId: 'aboutUs',
-    },
-    {
-      label: 'Решения для бизнеса',
-      elementId: 'solutions',
-    },
-    {
-      label: 'Кейсы',
-      elementId: 'cases'
-    },
-    {
-      label: 'Арсенал Решений',
-      elementId: 'asset'
-    },
-    {
-      label: 'Наши преимущества',
-      elementId: 'advantages'
-    }
-  ];
+  content = CONTENT;
 }

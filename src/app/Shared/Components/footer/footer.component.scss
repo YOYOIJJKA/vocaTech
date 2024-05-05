@@ -2,7 +2,6 @@ footer {
   background-color: #dce9f6;
   display: flex;
   flex-direction: row;
-  padding: 5%;
 }
 form {
   width: 100%;
@@ -12,11 +11,12 @@ form {
   flex-direction: column;
   width: 40%;
 }
-.form-field {
+.flex-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
+  padding: 5%;
 }
 label {
   padding-bottom: calc(var(--font-size-var) * 4);
@@ -30,4 +30,23 @@ section {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+.grey-background {
+  background: #444444;
+}
+.white {
+  color: #ffffff;
+}
+.confirm-box {
+  padding-left: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--font-size-var) * 5);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--font-size-var) * 8);
 }

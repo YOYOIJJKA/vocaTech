@@ -1,16 +1,21 @@
 <footer>
   <div class="half">
-    <form class="s jost">
-      <div class="form-field">
+    <form class="s jost" [formGroup]="contactForm">
+      <div class="flex-container">
         <div class="column">
           <label>Ваше имя*</label>
           <mat-form-field>
-            <input matInput placeholder="Иван" />
+            <input matInput placeholder="Иван" formControlName="name" />
           </mat-form-field>
 
           <label>Ваш email*</label>
           <mat-form-field>
-            <input type="email" matInput placeholder="_____________@___" />
+            <input
+              type="email"
+              formControlName="email"
+              matInput
+              placeholder="_____________@___"
+            />
           </mat-form-field>
           <p class="xxs grey">
             В первую очередь обрабатываются заявки с указанием корпоративной
@@ -19,7 +24,7 @@
 
           <label>ИНН компании*</label>
           <mat-form-field>
-            <input matInput type="text" />
+            <input matInput formControlName="TIN" type="text" />
           </mat-form-field>
         </div>
 
@@ -27,29 +32,49 @@
           <label>Ваш номер телефона*</label>
           <mat-form-field>
             <span matTextPrefix>+7 &nbsp;</span>
-            <input type="tel" matInput placeholder="(___) ___ __ __" />
+            <input
+              type="tel"
+              matInput
+              placeholder="(___) ___ __ __"
+              formControlName="phone"
+            />
           </mat-form-field>
 
           <label>Количество устройств*</label>
           <mat-form-field>
-            <input type="number" matInput />
+            <mat-select formControlName="devices">
+              <mat-option
+                *ngFor="let option of deviceOptions"
+                [value]="option.value"
+              >
+                {{ option.label }}</mat-option
+              >
+            </mat-select>
           </mat-form-field>
         </div>
       </div>
 
-      <section>
-        <mat-checkbox style="padding: 0">
-          <span class="grey s jost"
-            >Я даю согласие на обработку персональных данных согласно политике
-            конфиденциальности</span
-          >
-        </mat-checkbox>
-      </section>
-      <p class="jost grey s">* Поле обязательного ввода</p>
+      <div class="confirm-box">
+        <section>
+          <mat-checkbox style="padding: 0" formControlName="confirm">
+            <span class="grey s jost"
+              >Я даю согласие на обработку персональных данных согласно политике
+              конфиденциальности</span
+            >
+          </mat-checkbox>
+        </section>
+        <p class="jost grey s">* Поле обязательного ввода</p>
 
-      <button mat-flat-button class="contact-button" color="secondary">
-        <span class="s">Связаться с нами</span>
-      </button>
+        <button
+          mat-flat-button
+          class="contact-button"
+          color="primary"
+          [disabled]="!contactForm.valid"
+          (click)="sendData()"
+        >
+          <span class="s jost white">Связаться с нами</span>
+        </button>
+      </div>
     </form>
   </div>
   <div class="logo-container half">
@@ -57,3 +82,12 @@
     <p class="m">Ваш проводник в мир речевой аналитики</p>
   </div>
 </footer>
+
+<div class="grey-background flex-container">
+  <img class="big-logo" src="assets/logo.png" />
+  <div class="content">
+    <div class="jost l white" *ngFor="let element of content">
+      {{ element.label }}
+    </div>
+  </div>
+</div>

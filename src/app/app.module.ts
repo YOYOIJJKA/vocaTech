@@ -18,6 +18,8 @@ import { ClientsComponent } from './Pages/Components/friends/clients/clients.com
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSelectModule } from '@angular/material/select'
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatInputModule,
     MatFormFieldModule,
     MatCheckboxModule,
+    MatSelectModule,
+    ReactiveFormsModule
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
