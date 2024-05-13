@@ -12,7 +12,7 @@ import { HomeComponent } from './Pages/home/home.component';
 import { AboutUsComponent } from './Pages/Components/about-us/about-us.component';
 import { CasesComponent } from './Pages/Components/cases/cases.component';
 import { AdvantagesComponent } from './Pages/Components/advantages/advantages.component';
-import { BuissnessSolutionsComponent } from './Pages/Components/buissness-solutions/buissness-solutions.component';
+import { SlideComponent } from './Shared/Components/slide/slide.component';
 import { SetOfSolutionsComponent } from './Pages/Components/set-of-solutions/set-of-solutions.component';
 import { ClientsComponent } from './Pages/Components/friends/clients/clients.component';
 import { MatInputModule } from '@angular/material/input';
@@ -20,7 +20,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MatCard, MatCardModule } from '@angular/material/card';
+import { BusinessSolutionsComponent } from './Pages/Components/business-solutions/business-solutions.component';
 
 @NgModule({
   declarations: [
@@ -31,9 +31,10 @@ import { MatCard, MatCardModule } from '@angular/material/card';
     AboutUsComponent,
     CasesComponent,
     AdvantagesComponent,
-    BuissnessSolutionsComponent,
+    SlideComponent,
     SetOfSolutionsComponent,
     ClientsComponent,
+    BusinessSolutionsComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +46,6 @@ import { MatCard, MatCardModule } from '@angular/material/card';
     MatCheckboxModule,
     MatSelectModule,
     ReactiveFormsModule,
-    MatCard,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
