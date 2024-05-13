@@ -1,1 +1,35 @@
-<p>about-us works!</p>
+<div class="shadow indents gap">
+  <div class="card">
+    <div class="half gap">
+      <h1>
+        <span class="xxxl montserrat"
+          >Конвертируем речь сотрудника в продажи</span
+        >
+      </h1>
+      <p class="montserrat s">
+        <span class="highlighted">Наш главный принцип</span>
+        – индивидуальный подход к проектам, автоматизация процессов и постоянное
+        совершенствование системы
+      </p>
+      <div class="flexbox-align-center">
+        <button class="contact-button" mat-flat-button color="primary">
+          <span class="s jost white">Связаться с нами</span>
+        </button>
+        <span class="cases jost l">Кейсы →</span>
+      </div>
+    </div>
+    <div class="half flexbox-justify-center">
+      <img class="woman" src="./assets/woman.png" />
+    </div>
+  </div>
+  <div class="content-flex">
+    <div class="shadow-small content-box" *ngFor="let aboutUs of firstBox">
+      <span class="green-box-header jost-500 xxl">{{ aboutUs.title }}</span>
+      <p class="jost xxs restricted-width">{{ aboutUs.text }}</p>
+    </div>
+    <div class="content-box blue-background shadow-small" *ngFor="let aboutUs of secondBox">
+      <span class="jost-500 xxl">{{ aboutUs.title }}</span>
+      <p class="jost xxs restricted-width">{{ aboutUs.text }}</p>
+    </div>
+  </div>
+</div>

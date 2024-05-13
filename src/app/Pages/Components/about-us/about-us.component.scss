@@ -1,0 +1,40 @@
+.highlighted {
+  background-color: #2894d226;
+  border: 5px #2894d226;
+  padding: 5px;
+  border-radius: 1rem;
+}
+.cases {
+  color: #ffa134;
+  padding-left: 20px;
+}
+.woman {
+  width: 300px;
+  object-fit: cover;
+  height: 300px;
+  object-position: top;
+  background-color: rgba(154, 211, 173, 0.25);
+  border: 5px rgba(154, 211, 173, 0.25);
+  border-radius: 50%;
+}
+.content-box {
+    width: 14%;
+    padding: 2.5% 0.5% 1.5% 2.5%;
+}
+.green-box-header {
+    color: rgba(78, 180, 121, 1);
+}
+.content-flex {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    height: 15%;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.blue-background {
+    background: rgba(146, 189, 228, 1);
+}
