@@ -1,22 +1,9 @@
-.container {
-  display: flex;
-  background-color: lightblue;
-
-  width: 100px;
-  height: 50px;
-}
-
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .item {
-  position: absolute;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .slide {

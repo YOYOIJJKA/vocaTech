@@ -187,3 +187,14 @@ body {
   background-color: rgba(184, 211, 237, 1);
   border-color: rgba(184, 211, 237, 1);
 }
+.content-box-small {
+  @extend .jost-500;
+  @extend .m;
+  display: block;
+  height: 300px;
+  width: 100%;
+}
+.content-box-big {
+  @extend .content-box-small;
+  width: 100%;
+}
