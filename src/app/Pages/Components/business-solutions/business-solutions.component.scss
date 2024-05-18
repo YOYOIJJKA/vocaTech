@@ -1,18 +1,31 @@
 .element {
     display: block;
     position: relative;
+    width: 100%;
 }
 .title-card {
+    padding: 10%;
+}
+.title-card-big {
+    padding: 5%;
 }
 .element-box {
     display: flex; 
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-.padding {
-    padding: 20px;
+    gap: 2%;
 }
 .box-small { 
     width: 100%;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    padding-top: 2%;
+}
+.content-card {
+    padding-top: 5%;
+    padding-left: 5%;
 }
