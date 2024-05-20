@@ -1,0 +1,22 @@
+.img-box {
+  top: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+
+img {
+  position: relative;
+  object-fit: contain;
+}
+.small {
+  width: 48%;
+}
+.big {
+  width: 98%;
+}
+.flex {
+  display: flex;
+}

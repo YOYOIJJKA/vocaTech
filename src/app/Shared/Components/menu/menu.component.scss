@@ -1,0 +1,32 @@
+.menu-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6%;
+  width: 20%;
+  border: 1px solid;
+  user-select: none;
+  border-color: var(--dark-blue);
+  &:hover {
+    background-color: var(--blue);
+  }
+  &:nth-child(1) {
+    border-radius: 40px 0 0 0;
+  }
+  &:nth-child(3) {
+    border-radius: 0 40px 0 0;
+  }
+  &:nth-child(4) {
+    border-radius: 0 0 0 40px;
+  }
+  &:nth-child(6) {
+    border-radius: 0 0 40px 0;
+  }
+}

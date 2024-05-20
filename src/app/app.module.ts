@@ -21,6 +21,11 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BusinessSolutionsComponent } from './Pages/Components/business-solutions/business-solutions.component';
+import { MenuComponent } from './Shared/Components/menu/menu.component';
+import { CasePageComponent } from './Pages/case-page/case-page.component';
+import { ImgContentComponent } from './Shared/Components/img-content/img-content.component';
+import { VideoContentComponent } from './Shared/Components/video-content/video-content.component';
+import { BlockContentComponent } from './Shared/Components/block-content/block-content.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +40,11 @@ import { BusinessSolutionsComponent } from './Pages/Components/business-solution
     SetOfSolutionsComponent,
     ClientsComponent,
     BusinessSolutionsComponent,
+    MenuComponent,
+    CasePageComponent,
+    ImgContentComponent,
+    VideoContentComponent,
+    BlockContentComponent,
   ],
   imports: [
     BrowserModule,

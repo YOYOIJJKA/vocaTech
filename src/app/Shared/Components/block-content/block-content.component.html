@@ -1,0 +1,15 @@
+<h1 style="padding-top: 2.5%">
+  <span class="montserrat xxl">{{ content?.title }}</span>
+</h1>
+<ng-container *ngFor="let box of content?.boxes">
+  <div class="box shadow">
+    <div class="text-box">
+      <div class="title jost xl">{{ box.title }}</div>
+      <div class="subtitle jost s">{{ box.subtitle }}</div>
+      <div class="jost xxs">
+        <p class="text" *ngFor="let text of box.text">{{ text }}</p>
+      </div>
+    </div>
+    <img [src]="sanitize(box.src)" alt="" />
+  </div>
+</ng-container>

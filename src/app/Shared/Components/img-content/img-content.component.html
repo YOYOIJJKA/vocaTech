@@ -1,0 +1,35 @@
+<h1 style="padding-top: 2.5%">
+  <span class="montserrat xxl">{{ content?.title }}</span>
+</h1>
+<div class="flex">
+  <div class="img-box">
+    <ng-container *ngFor="let img of firstImg">
+      <img
+        [src]="img.src"
+        [class]="'shadow-small ' + img.style"
+        alt="img not found"
+      />
+    </ng-container>
+  </div>
+  <div class="img-box">
+    <ng-container *ngFor="let img of secondImg">
+      <img
+        [src]="img.src"
+        [class]="'shadow-small ' + img.style"
+        alt="img not found"
+      />
+    </ng-container>
+  </div>
+</div>
+<!-- <h1><span class="montserrat xxl">Видео</span></h1>
+<iframe
+  height="600px"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  title="Rick Astley - Never Gonna Give You Up (Official Music Video)"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe> -->
+
+<!-- <h1><span class="montserrat xxl">Блоки</span></h1> -->
