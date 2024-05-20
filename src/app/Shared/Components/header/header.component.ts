@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CONTENT } from '../../constants';
+import { Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -10,4 +12,17 @@ export class HeaderComponent {
   panelOpenState: boolean = false;
 
   content = CONTENT;
+
+  constructor(
+    public router: Router,
+    private viewportScroller: ViewportScroller
+  ) {}
+
+  navigate(element: string) {
+    if (this.router.url != '/') {
+      this.router.navigateByUrl('/');
+      setTimeout(() => {}, 500);
+    }
+    this.viewportScroller.scrollToAnchor(element);
+  }
 }

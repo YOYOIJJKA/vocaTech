@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface content {
   title: string;
@@ -39,4 +40,10 @@ export class AboutUsComponent {
       text: 'конверсия из звонка в продаже недвижимости',
     },
   ];
+
+  constructor(private router: Router) {}
+
+  navigateToCases() {
+    this.router.navigateByUrl('/cases');
+  }
 }

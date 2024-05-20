@@ -12,10 +12,10 @@
     <img class="control" src="assets/close.png" *ngIf="panelOpenState" />
   </mat-expansion-panel-header>
   <div class="montserrat xxl content-box">
-    <div class="content" *ngFor="let element of content">
+    <div class="content" *ngFor="let element of content" (click)="navigate(element.elementId)">
       {{ element.label }}
     </div>
-    <button class="contact-button " mat-raised-button color="primary">
+    <button class="contact-button" mat-raised-button color="primary">
       <span class="s jost white">Связаться с нами</span>
     </button>
   </div>

@@ -1,4 +1,6 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-advantages',
@@ -23,4 +25,17 @@ export class AdvantagesComponent {
       img: './assets/phone.png',
     },
   ];
+
+  constructor(
+    private router: Router,
+    private viewportScroller: ViewportScroller
+  ) {}
+
+  navigate(element: string) {
+    if (this.router.url != '/') {
+      this.router.navigateByUrl('/');
+      setTimeout(() => {}, 500);
+    }
+    this.viewportScroller.scrollToAnchor(element);
+  }
 }

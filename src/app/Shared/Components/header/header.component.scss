@@ -18,5 +18,9 @@ mat-expansion-panel.mat-expanded {
   padding-left: 10%;
 }
 .content {
+  user-select: none;
   height: 50px;
+  &:hover {
+    text-decoration: underline;
+  }
 }

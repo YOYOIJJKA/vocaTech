@@ -79,7 +79,10 @@
   </div>
   <div class="logo-container half">
     <img class="big-logo" src="assets/logo.png" />
-    <div class="m jost restricted-width" style="text-align: center;">Ваш проводник в мир речевой <br/> аналитики</div>
+    <div class="m jost restricted-width" style="text-align: center">
+      Ваш проводник в мир речевой <br />
+      аналитики
+    </div>
   </div>
 </footer>
 
@@ -87,7 +90,9 @@
   <img class="big-logo" src="assets/logo.png" />
   <div class="content">
     <div class="jost l white" *ngFor="let element of content">
-      {{ element.label }}
+      <span class="content-footer" (click)="navigate(element.elementId)">
+        {{ element.label }}</span
+      >
     </div>
   </div>
 </div>

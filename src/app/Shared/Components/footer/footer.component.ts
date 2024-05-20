@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CONTENT, DEVICES_OPTIONS } from '../../constants';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
@@ -12,7 +14,11 @@ export class FooterComponent {
   deviceOptions = DEVICES_OPTIONS;
   contactForm: FormGroup;
 
-  constructor(public formBuilder: FormBuilder) {
+  constructor(
+    public formBuilder: FormBuilder,
+    private router: Router,
+    private viewportScroller: ViewportScroller
+  ) {
     this.contactForm = formBuilder.group({
       name: [
         null,
@@ -49,5 +55,13 @@ export class FooterComponent {
   sendData() {
     const formData = this.contactForm.getRawValue();
     console.log(formData);
+  }
+
+  navigate(element: string) {
+    if (this.router.url != '/') {
+      this.router.navigateByUrl('/');
+      setTimeout(() => {}, 500);
+    }
+    this.viewportScroller.scrollToAnchor(element);
   }
 }

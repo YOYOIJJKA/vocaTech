@@ -6,6 +6,12 @@ footer {
 form {
   width: 100%;
 }
+.content-footer {
+  user-select: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
 .column {
   display: flex;
   flex-direction: column;
