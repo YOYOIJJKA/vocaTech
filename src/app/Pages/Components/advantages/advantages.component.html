@@ -1,1 +1,28 @@
-<p>advantages works!</p>
+<body class="indents">
+  <h1><span class="montserrat xxl">Почему нас выбирают?</span></h1>
+
+  <div class="adv-box">
+    <div class="small-adv shadow-small" *ngFor="let advantage of advantages">
+      <div>
+        <img [src]="advantage.img" />
+        <div class="adv-title jost m">{{ advantage.title }}</div>
+      </div>
+      <div class="adv-text s host s shadow-small">{{ advantage.text }}</div>
+    </div>
+    <div class="small-adv shadow-small blue">
+      <div class="big-adv-title jost l">
+        Вы можете записаться на бесплатное демо
+      </div>
+      <div class="button">
+        <button
+          mat-flat-button
+          class="contact-button"
+          style="width: auto"
+          color="primary"
+        >
+          <span class="jost m" style="color: white;">Записаться </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>

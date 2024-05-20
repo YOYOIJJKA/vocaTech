@@ -5,8 +5,13 @@
 }
 .title-card {
     padding: 10%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .title-card-big {
+    @extend .title-card;
     padding: 5%;
 }
 .element-box {
@@ -26,6 +31,26 @@
     padding-top: 2%;
 }
 .content-card {
-    padding-top: 5%;
-    padding-left: 5%;
+    // padding-top: 5%;
+    // padding-left: 5%;
+    padding-right: 2.5%;
+}
+.content-card-big {
+    @extend .content-card;
+    padding-top: 0%;
+}
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    margin: 0;;
+}
+li::marker {
+    color: rgba(181, 50, 138, 1);
+}
+.arrow {
+    width: 100%;
+    text-align: end;
+    color: rgba(181, 50, 138, 1);
 }

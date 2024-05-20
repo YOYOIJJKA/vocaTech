@@ -76,8 +76,14 @@ $vocaTech-theme: mat.define-light-theme(
 
 :root {
   --font-size-var: 0.25rem;
+  --light-blue: rgba(220, 233, 246, 0.5);
+  --dark-blue: rgba(40, 148, 210, 1);
+  --blue: rgba(184, 211, 237, 0.5);
+  --green: rgba(78, 180, 121, 0.5);
+  --light-green: rgba(188, 226, 200, 0.5);
+  --orange: rgba(255, 161, 52, 0.5);
+  --light-orange: rgba(255, 217, 175, 0.5);
 }
-
 html {
   height: 100%;
 }
@@ -157,7 +163,7 @@ body {
 }
 .shadow-small {
   @extend .shadow;
-  border-radius: 45px;
+  border-radius: 20px;
 }
 .card {
   display: flex;
@@ -184,41 +190,33 @@ body {
   justify-content: center;
 }
 .dark-blue {
-  --dark-blue: rgba(40, 148, 210, 1);
   background-color: var(--dark-blue);
   border-color: var(--dark-blue);
 }
 .blue {
-  --blue: rgba(184, 211, 237, 0.5);
   background-color: var(--blue);
   border-color: var(--blue);
 }
 .light-blue {
-  --light-blue: rgba(220, 233, 246, 0.5);
   background-color: var(--light-blue);
   border-color: var(--light-blue);
 }
 .green {
-  --green: rgba(78, 180, 121, 0.5);
   background-color: var(--green);
   border-color: var(--green);
 }
 .light-green {
-  --light-green: rgba(188, 226, 200, 0.5);
   background-color: var(--light-green);
   border-color: var(--light-green);
 }
 .orange {
-  --orange: rgba(255, 161, 52, 0.5);
   background-color: var(--orange);
   border-color: var(--orange);
 }
 .light-orange {
-  --light-orange: rgba(255, 217, 175, 0.5);
   background-color: var(--light-orange);
   border-color: var(--light-orange);
 }
-
 .content-box-small {
   @extend .jost-500;
   @extend .m;
@@ -229,4 +227,30 @@ body {
 .content-box-big {
   @extend .content-box-small;
   width: 100%;
+}
+.case {
+  @extend .jost;
+  @extend .l;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 140px;
+  height: 100%;
+  color: rgba(40, 148, 210, 1);
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-bottom: 5%;
+  padding-right: 2.5%;
+  width: 100%;
+  &:hover {
+    background-color: var(--blue);
+    color: black;
+  }
+}
+
+.highlighted {
+  background-color: #2894d226;
+  border: 5px #2894d226;
+  padding: 5px;
+  border-radius: 1rem;
 }

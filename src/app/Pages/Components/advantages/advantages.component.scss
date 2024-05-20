@@ -1,0 +1,31 @@
+.adv-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.small-adv {
+  width: 18.5%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5%;
+  padding-bottom: 0;
+}
+img {
+  height: 50px;
+  width: 50px;
+}
+.adv-text {
+  line-height: 150%;
+  text-align: left;
+  width: 100%;
+  padding: 20px 13% 20px 13%;
+  background-color: var(--green);
+}
+.button {
+  display: flex;
+  width: 100%;
+  padding: 5%;
+}
