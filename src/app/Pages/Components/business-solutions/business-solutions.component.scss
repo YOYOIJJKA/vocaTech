@@ -1,56 +1,76 @@
 .element {
-    display: block;
-    position: relative;
-    width: 100%;
+  display: block;
+  position: relative;
+  width: 100%;
 }
 .title-card {
-    padding: 10%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  padding: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (max-width: 800px) {
+    padding: 2.5%;
+  }
 }
 .title-card-big {
-    @extend .title-card;
-    padding: 5%;
+  @extend .title-card;
+  padding: 5%;
 }
 .element-box {
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2%;
 }
-.box-small { 
-    width: 100%;
+.box-small {
+  width: 100%;
 }
 .row {
-    display: flex;
-    flex-direction: row;
-    gap: 1%;
-    padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  padding-top: 2%;
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+.wide-mobile {
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 }
 .content-card {
-    // padding-top: 5%;
-    // padding-left: 5%;
-    padding-right: 2.5%;
+  // padding-top: 5%;
+  // padding-left: 5%;
+  padding-right: 2.5%;
 }
 .content-card-big {
-    @extend .content-card;
-    padding-top: 0%;
+  @extend .content-card;
+  padding-top: 0%;
 }
 .flexbox {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-evenly;
-    margin: 0;;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  margin: 0;
 }
 li::marker {
-    color: rgba(181, 50, 138, 1);
+  color: rgba(181, 50, 138, 1);
 }
 .arrow {
-    width: 100%;
-    text-align: end;
-    color: rgba(181, 50, 138, 1);
+  width: 100%;
+  text-align: end;
+  color: rgba(181, 50, 138, 1);
+}
+.mobile {
+  display: none;
+  @media (max-width: 800px) {
+    display: block;
+  }
+}
+h1 {
+    width: fit-content;
 }

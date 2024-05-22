@@ -1,24 +1,54 @@
-<body class="indents">
-  <h1><span class="montserrat xxl">Кейсы</span></h1>
+<h1><span class="montserrat xxl">Кейсы</span></h1>
 
-  <div class="case-box">
-    <div class="small-case" *ngFor="let case of cases">
-      <div class="shadow-small case">
-        <div class="case-title">{{ case.title }}</div>
-        <div class="case-text s">{{ case.text }}</div>
-      </div>
+<div class="case-box">
+  <div class="small-case" *ngFor="let case of cases">
+    <div class="shadow-small case">
+      <div class="case-title">{{ case.title }}</div>
+      <div class="case-text s">{{ case.text }}</div>
     </div>
-    <div class="big-case">
-      <div class="shadow big-case-title jost l green">
-        Наши результаты говорят сами за себя
-        <div class="button">
-          <div style="border: 2px solid blue; border-radius: 30px">
-            <button mat-button class="contact-button" color="primary">
-              <span class="jost m" (click)="navigateToCases()">Все кейсы </span>
-            </button>
-          </div>
+  </div>
+  <div class="big-case">
+    <div class="shadow-small big-case-title jost l green">
+      Наши результаты говорят сами за себя
+      <div class="button">
+        <div style="border: 2px solid blue; border-radius: 30px">
+          <button mat-button class="contact-button" color="primary">
+            <span class="jost m" (click)="navigateToCases()">Все кейсы </span>
+          </button>
         </div>
       </div>
     </div>
   </div>
-</body>
+</div>
+
+<div class="mobile-case-box">
+  <p-carousel
+    [value]="cases"
+    [circular]="true"
+    [numScroll]="1"
+    [numVisible]="1"
+    [showNavigators]="false"
+  >
+    <ng-template let-case pTemplate="item">
+      <div class="carousel-case">
+        <div class="shadow-small case">
+          <div class="case-title">{{ case.title }}</div>
+          <div class="case-text s">{{ case.text }}</div>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>
+
+<div class="big-case mobile-case-box">
+  <div class="shadow-small big-case-title jost l green">
+    Наши результаты говорят сами за себя
+    <div class="button">
+      <div style="border: 2px solid blue; border-radius: 30px">
+        <button mat-button class="contact-button" color="primary">
+          <span class="jost m" (click)="navigateToCases()">Все кейсы </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

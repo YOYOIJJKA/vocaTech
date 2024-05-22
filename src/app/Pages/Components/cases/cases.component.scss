@@ -1,35 +1,54 @@
 .case-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 97.5%;
-    row-gap: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  row-gap: 40px;
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+.carousel-case {
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center !important;
+}
+.mobile-case-box {
+    display: none;
+    @media (max-width: 800px) {
+        display: block;
+        width: 100% !important;
+    }
 }
 .small-case {
-    width: 22%;
+  width: 24.5%;
 }
 .big-case {
-    width: 48%;
-    color: black;
+  width: 50%;
+  color: black;
 }
 .big-case-title {
-    height: 100%;
-    color: black;
-    padding-top: 2.5%;
-    padding-left: 5%;
-    padding-bottom: 2.5%;
-    padding-right: 1.25%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 100%;
+  color: black;
+  padding-top: 2.5%;
+  padding-left: 5%;
+  padding-bottom: 2.5%;
+  padding-right: 1.25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .button {
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  @media (max-width: 800px) {
+    margin-top: 10%;
+    flex-direction: row;
+  }
 }
 .case-text {
-    color: black;
+  color: black;
 }

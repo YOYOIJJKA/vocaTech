@@ -5,6 +5,7 @@ footer {
 }
 form {
   width: 100%;
+  padding: 2.5%;
 }
 .content-footer {
   user-select: none;
@@ -20,11 +21,11 @@ form {
     width: 98%;
   }
 }
-.flex-container {
+.footer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
   padding: 5%;
   @media (max-width:800px) {
     flex-direction: column;

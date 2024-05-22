@@ -27,6 +27,9 @@ import { ImgContentComponent } from './Shared/Components/img-content/img-content
 import { VideoContentComponent } from './Shared/Components/video-content/video-content.component';
 import { BlockContentComponent } from './Shared/Components/block-content/block-content.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CarouselModule } from 'primeng/carousel';
+import { ButtonModule } from 'primeng/button';
+import { TagModule } from 'primeng/tag';
 
 @NgModule({
   declarations: [
@@ -58,6 +61,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatSelectModule,
     ReactiveFormsModule,
     HttpClientModule,
+    CarouselModule,
+    ButtonModule,
+    TagModule
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
