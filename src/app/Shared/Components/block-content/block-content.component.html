@@ -10,6 +10,6 @@
         <p class="text" *ngFor="let text of box.text">{{ text }}</p>
       </div>
     </div>
-    <img [src]="sanitize(box.src)" alt="" />
+    <img class="img-box" [src]="sanitize(box.src)" alt="" />
   </div>
 </ng-container>

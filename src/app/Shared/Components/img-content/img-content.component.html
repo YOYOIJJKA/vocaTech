@@ -21,15 +21,17 @@
     </ng-container>
   </div>
 </div>
-<!-- <h1><span class="montserrat xxl">Видео</span></h1>
-<iframe
-  height="600px"
-  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-  title="Rick Astley - Never Gonna Give You Up (Official Music Video)"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen
-></iframe> -->
 
-<!-- <h1><span class="montserrat xxl">Блоки</span></h1> -->
+<p-carousel
+  [value]="content?.img || []"
+  [circular]="true"
+  [numScroll]="1"
+  [numVisible]="1"
+  [showNavigators]="false"
+>
+  <ng-template let-img pTemplate="item">
+    <div class="carousel">
+      <img [src]="img.src" [class]="'shadow-small '+ 'big'" alt="img not found" />
+    </div>
+  </ng-template>
+</p-carousel>

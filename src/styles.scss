@@ -122,9 +122,15 @@ footer {
 }
 .xxs {
   font-size: calc(var(--font-size-var) * 4);
+  @media (max-width: 800px) {
+    font-size: calc(var(--font-size-var) * 3);
+  }
 }
 .xs {
   font-size: calc(var(--font-size-var) * 5);
+  @media (max-width: 800px) {
+    font-size: calc(var(--font-size-var) * 3);
+  }
 }
 .s {
   font-size: calc(var(--font-size-var) * 6);
@@ -241,7 +247,7 @@ footer {
   // margin: 0.5%;
   // @media (max-width: 800px) {
   //   padding: 2.5%;
-      // margin: 2.5%;
+  // margin: 2.5%;
   // }
 }
 .restricted-width {
@@ -320,7 +326,7 @@ footer {
     background-color: var(--blue);
     color: black;
   }
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
     height: 95%;
     width: 95%;
   }

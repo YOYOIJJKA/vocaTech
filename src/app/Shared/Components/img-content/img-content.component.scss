@@ -5,8 +5,16 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1%;
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
-
+p-carousel {
+  display: none;
+  @media (max-width: 800px) {
+    display: block;
+  }
+}
 img {
   position: relative;
   object-fit: contain;
