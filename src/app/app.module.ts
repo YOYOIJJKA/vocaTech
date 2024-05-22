@@ -26,6 +26,7 @@ import { CasePageComponent } from './Pages/case-page/case-page.component';
 import { ImgContentComponent } from './Shared/Components/img-content/img-content.component';
 import { VideoContentComponent } from './Shared/Components/video-content/video-content.component';
 import { BlockContentComponent } from './Shared/Components/block-content/block-content.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { BlockContentComponent } from './Shared/Components/block-content/block-c
     MatCheckboxModule,
     MatSelectModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],

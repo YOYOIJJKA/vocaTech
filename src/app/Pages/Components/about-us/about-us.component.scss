@@ -7,17 +7,23 @@
   }
 }
 .woman {
-  width: 300px;
+  width: 30vw;
+  height: 40vw;
   object-fit: cover;
-  height: 300px;
   object-position: top;
   background-color: rgba(154, 211, 173, 0.25);
   border: 5px rgba(154, 211, 173, 0.25);
   border-radius: 50%;
+  @media (max-width:800px) {
+    display: none;
+  }
 }
 .content-box {
   width: 14%;
   padding: 2.5% 0.5% 1.5% 2.5%;
+  @media (max-width:800px) {
+    width: 40%;
+  }
 }
 .green-box-header {
   color: rgba(78, 180, 121, 1);
@@ -25,13 +31,21 @@
 .content-flex {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 1rem;
   height: 15%;
+  @media (max-width:800px) {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
 }
 .content {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 1rem;
+  @media (max-width:800px) {
+    gap: 0.25rem;
+    width: 40%;
+  }
 }
 .blue-background {
   background: rgba(146, 189, 228, 1);

@@ -3,6 +3,8 @@ import { CONTENT, DEVICES_OPTIONS } from '../../constants';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
+import { MailService } from '../../Services/mail.service';
+import { Client } from '../../Interfaces/client';
 
 @Component({
   selector: 'app-footer',
@@ -17,7 +19,8 @@ export class FooterComponent {
   constructor(
     public formBuilder: FormBuilder,
     private router: Router,
-    private viewportScroller: ViewportScroller
+    private viewportScroller: ViewportScroller,
+    private mailer: MailService
   ) {
     this.contactForm = formBuilder.group({
       name: [
@@ -54,7 +57,7 @@ export class FooterComponent {
 
   sendData() {
     const formData = this.contactForm.getRawValue();
-    console.log(formData);
+    this.mailer.sendMail(formData as Client).subscribe();
   }
 
   navigate(element: string) {

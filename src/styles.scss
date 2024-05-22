@@ -86,9 +86,10 @@ $vocaTech-theme: mat.define-light-theme(
 }
 html {
   height: 100%;
+  width: 100%;
 }
 body {
-  margin: 0;
+  width: 99%;
 }
 .jost {
   font-family: "Jost", sans-serif;
@@ -114,44 +115,80 @@ body {
 }
 .s {
   font-size: calc(var(--font-size-var) * 6);
+  @media (max-width: 800px) {
+    font-size: calc(var(--font-size-var) * 3);
+  }
 }
 .m {
   font-size: calc(var(--font-size-var) * 7);
 }
 .l {
   font-size: calc(var(--font-size-var) * 8);
+  @media (max-width: 800px) {
+    font-size: calc(var(--font-size-var) * 3);
+  }
 }
 .xl {
   font-size: calc(var(--font-size-var) * 9);
+  @media (max-width: 800px) {
+    font-size: calc(var(--font-size-var) * 4);
+  }
 }
 .xxl {
   font-size: calc(var(--font-size-var) * 10);
+  @media (max-width: 800px) {
+    font-size: calc(var(--font-size-var) * 5);
+  }
 }
 .xxxl {
   font-size: calc(var(--font-size-var) * 12);
+  @media (max-width: 800px) {
+    font-size: calc(var(--font-size-var) * 7);
+  }
 }
 .logo {
   height: 50px;
   width: 200px;
+  @media (max-width: 800px) {
+    height: 25px;
+    width: 100px;
+  }
 }
 .big-logo {
   height: 100px;
   width: 400px;
+  @media (max-width: 800px) {
+    height: 25px;
+    width: 100px;
+    padding-bottom: 5%;
+  }
 }
 .control {
   max-width: 90px;
   max-height: 70px;
+  @media (max-width: 800px) {
+    max-width: 45px;
+    max-height: 35px;
+  }
 }
 .contact-button {
   width: 300px;
   height: 60px !important;
   border-radius: 30px !important;
+  @media (max-width: 800px) {
+    width: 150px;
+    height: 30px !important;
+    border-radius: 15px !important;
+  }
 }
 .grey {
   color: #5d525a;
 }
 .half {
   width: 50%;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 }
 .white {
   color: white;
@@ -168,18 +205,35 @@ body {
 .card {
   display: flex;
   flex-direction: row;
+  @media (max-width: 800px) {
+    width: 90%;
+    padding: 5%;
+    flex-direction: column;
+  }
 }
 .gap {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  @media (max-width: 800px) {
+    width: 94%;
+    gap: 0px;
+  }
 }
 .indents {
   padding: 2.5%;
   margin: 0.5%;
+  @media (max-width: 800px) {
+    padding: 2.5%;
+    margin: 2.5%;
+    width: 88%;
+  }
 }
 .restricted-width {
   max-width: 60%;
+  @media (max-width: 800px) {
+    max-width: 90%;
+  }
 }
 .flexbox-align-center {
   display: flex;
@@ -253,4 +307,7 @@ body {
   border: 5px #2894d226;
   padding: 5px;
   border-radius: 1rem;
+  @media (max-width: 800px) {
+    padding: 2px;
+  }
 }
