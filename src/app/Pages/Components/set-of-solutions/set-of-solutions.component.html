@@ -1,32 +1,28 @@
-<body class="indents">
-  <h1><span class="montserrat xxl">Кейсы</span></h1>
+<h1><span class="montserrat xxl">Арсенал решений</span></h1>
 
-  <div class="set-box">
-    <div class="set-text half jost s">
-      <p>
-        Мы — российская компания, специализирующаяся на разработке передовых
-        технологий в области <br />
-        <span class="highlighted">
-          WI-FI аудиобейджей и речевой аналитики.
-        </span>
-      </p>
-      <p>
-        Наша миссия — помогать компаниям улучшать свой бизнес, предоставляя
-        им мощные инструменты для анализа и оптимизации процессов.
-      </p>
-      <p>
-        Мы постоянно стремимся быть на передовых позициях в области технологий
-        и гордимся тем, что наши инновационные продукты помогают нашим клиентам
-        достигать новых высот в своём бизнесе.
-      </p>
-    </div>
-    <div class="half solution-box">
-      <ng-container *ngFor="let solution of set">
-        <div [class]="'solution shadow-small jost s ' + solution.color">
-          <img [src]="solution.img" alt="" />
-          <span class="solution-title"> {{ solution.title }}</span>
-        </div>
-      </ng-container>
-    </div>
+<div class="set-box">
+  <div class="set-text half jost s">
+    <p>
+      Мы — российская компания, специализирующаяся на разработке передовых
+      технологий в области <br />
+      <span class="highlighted"> WI-FI аудиобейджей и речевой аналитики. </span>
+    </p>
+    <p>
+      Наша миссия — помогать компаниям улучшать свой бизнес, предоставляя
+      им мощные инструменты для анализа и оптимизации процессов.
+    </p>
+    <p>
+      Мы постоянно стремимся быть на передовых позициях в области технологий
+      и гордимся тем, что наши инновационные продукты помогают нашим клиентам
+      достигать новых высот в своём бизнесе.
+    </p>
   </div>
-</body>
+  <div class="half solution-box">
+    <ng-container *ngFor="let solution of set">
+      <div [class]="'solution shadow-small jost s ' + solution.color">
+        <img [src]="solution.img" alt="" />
+        <span class="solution-title"> {{ solution.title }}</span>
+      </div>
+    </ng-container>
+  </div>
+</div>

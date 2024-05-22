@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width:800px) {
+    display: none;
+  }
 }
 .small-adv {
   width: 24%;
@@ -12,6 +15,16 @@
   row-gap: 3rem;
   padding: 2.5%;
   padding-bottom: 0;
+  @media (max-width:800px) {
+    width: 98%;
+    height: 100%;
+  }
+}
+.carousel-adv {
+  display: none;
+  @media (max-width: 800px) {
+    display: block;
+  }
 }
 img {
   height: 50px;
@@ -24,6 +37,9 @@ img {
   padding-bottom: 10%;
   width: 125%;
   background-color: var(--green);
+  @media (max-width:800px) {
+    width: 100%;
+  }
 }
 .button {
   display: flex;

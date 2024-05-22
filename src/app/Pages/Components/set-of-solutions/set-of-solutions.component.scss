@@ -1,6 +1,9 @@
 .set-box {
   display: flex;
   flex-direction: row;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 }
 .set-text {
   padding-right: 5%;
@@ -19,6 +22,10 @@ img {
   padding-top: 5%;
   padding-left: 2.5%;
   flex: 1 0 calc(28%);
+  @media (max-width:800px) {
+    padding-bottom: 2.5%;
+    padding-left: 5%;
+  }
 }
 .solution-box {
   width: 50%;
@@ -26,6 +33,9 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width:800px) {
+    width: 100%;
+  }
 }
 .solution-title {
   padding-right: 5%;

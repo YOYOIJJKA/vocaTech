@@ -9,11 +9,7 @@
     display: none;
   }
 }
-.carousel-case {
-    display: flex !important;
-    justify-content: center !important;
-    align-content: center !important;
-}
+
 .mobile-case-box {
     display: none;
     @media (max-width: 800px) {

@@ -21,3 +21,24 @@
     </div>
   </div>
 </div>
+
+<p-carousel
+  class="carousel-adv"
+  [value]="advantages"
+  [showIndicators]="true"
+  [showNavigators]="false"
+  [numVisible]="1"
+  [numScroll]="1"
+>
+  <ng-template let-advantage pTemplate="item">
+    <div class="carousel" style="height: 98%;">
+      <div class="small-adv shadow-small">
+        <div>
+          <img [src]="advantage.img" />
+          <div class="adv-title jost m">{{ advantage.title }}</div>
+        </div>
+        <div class="adv-text s host s shadow-small">{{ advantage.text }}</div>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>

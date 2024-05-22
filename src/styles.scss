@@ -325,7 +325,12 @@ footer {
     width: 95%;
   }
 }
-
+.carousel {
+  display: flex !important;
+  justify-content: center !important;
+  align-content: center !important;
+  margin: 1%;
+}
 .highlighted {
   background-color: #2894d226;
   border: 5px #2894d226;

@@ -168,7 +168,11 @@
   <ng-template let-solution pTemplate="item">
     <app-slide>
       <div content1 class="box-small">
-        <div [class]="'shadow-small content-box-small wide-mobile ' + solution.color">
+        <div
+          [class]="
+            'shadow-small content-box-small wide-mobile ' + solution.color
+          "
+        >
           <div class="title-card">
             <div>{{ solution.title }}</div>
             <div class="arrow">→</div>
@@ -176,7 +180,11 @@
         </div>
       </div>
       <div content2 class="box-small">
-        <div [class]="'shadow-small content-box-small wide-mobile light-' + solution.color">
+        <div
+          [class]="
+            'shadow-small content-box-small wide-mobile light-' + solution.color
+          "
+        >
           <ul class="flexbox">
             <li
               class="content-card-big jost s"
