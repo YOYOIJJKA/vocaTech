@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -41,9 +42,20 @@ export class AboutUsComponent {
     },
   ];
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private viewportScroller: ViewportScroller
+  ) {}
 
   navigateToCases() {
     this.router.navigateByUrl('/cases');
+  }
+
+  navigate(element: string) {
+    if (this.router.url != '/') {
+      this.router.navigateByUrl('/');
+      setTimeout(() => {}, 500);
+    }
+    this.viewportScroller.scrollToAnchor(element);
   }
 }
