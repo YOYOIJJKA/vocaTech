@@ -45,8 +45,8 @@
     Наши результаты говорят сами за себя
     <div class="button">
       <div style="border: 2px solid blue; border-radius: 30px">
-        <button mat-button class="contact-button" color="primary">
-          <span class="jost m" (click)="navigateToCases()">Все кейсы </span>
+        <button mat-button class="contact-button" color="primary" [disabled]="true"  (click)="navigateToCases()">
+          <span class="jost m">Все кейсы </span>
         </button>
       </div>
     </div>

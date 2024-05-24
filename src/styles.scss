@@ -127,43 +127,43 @@ footer {
   }
 }
 .xs {
-  font-size: calc(var(--font-size-var) * 5);
+  font-size: calc(var(--font-size-var) * 4);
   @media (max-width: 800px) {
     font-size: calc(var(--font-size-var) * 3);
   }
 }
 .s {
-  font-size: calc(var(--font-size-var) * 6);
+  font-size: calc(var(--font-size-var) * 4);
   @media (max-width: 800px) {
     font-size: calc(var(--font-size-var) * 3);
   }
 }
 .m {
-  font-size: calc(var(--font-size-var) * 7);
+  font-size: calc(var(--font-size-var) * 5);
   @media (max-width: 800px) {
     font-size: calc(var(--font-size-var) * 4);
   }
 }
 .l {
-  font-size: calc(var(--font-size-var) * 8);
+  font-size: calc(var(--font-size-var) * 6);
   @media (max-width: 800px) {
     font-size: calc(var(--font-size-var) * 4);
   }
 }
 .xl {
-  font-size: calc(var(--font-size-var) * 9);
+  font-size: calc(var(--font-size-var) * 7);
   @media (max-width: 800px) {
     font-size: calc(var(--font-size-var) * 4);
   }
 }
 .xxl {
-  font-size: calc(var(--font-size-var) * 10);
+  font-size: calc(var(--font-size-var) * 8);
   @media (max-width: 800px) {
     font-size: calc(var(--font-size-var) * 5);
   }
 }
 .xxxl {
-  font-size: calc(var(--font-size-var) * 12);
+  font-size: calc(var(--font-size-var) * 10);
   @media (max-width: 800px) {
     font-size: calc(var(--font-size-var) * 7);
   }
@@ -296,7 +296,7 @@ footer {
   @extend .jost-500;
   @extend .m;
   display: block;
-  height: 300px;
+  height: 30vh;
   width: 100%;
   @media (max-width: 800px) {
     height: 120px;
@@ -314,7 +314,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 140px;
+  gap: 15vh;
   height: 100%;
   color: rgba(40, 148, 210, 1);
   padding-top: 5%;

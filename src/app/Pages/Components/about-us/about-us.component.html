@@ -15,11 +15,13 @@
         <button class="contact-button" mat-flat-button color="primary">
           <span class="s jost white">Связаться с нами</span>
         </button>
-        <span class="cases jost l" (click)="navigateToCases()">Кейсы →</span>
+        <button class="cases-button" (click)="navigateToCases()" disabled>
+        <span class="cases jost l">Кейсы →</span>
+      </button>
       </div>
     </div>
-    <div class="half flexbox-justify-center" style="height: 100%">
-      <img class="woman" src="./assets/hands.jpg" style="height: 100%" />
+    <div class="half flexbox-justify-center">
+      <img class="woman" src="./assets/woman.jpg"/>
     </div>
   </div>
   <div class="pc-flex content-flex">

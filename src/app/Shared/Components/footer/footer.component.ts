@@ -58,6 +58,7 @@ export class FooterComponent {
   sendData() {
     const formData = this.contactForm.getRawValue();
     this.mailer.sendMail(formData as Client).subscribe();
+    this.contactForm.reset();
   }
 
   navigate(element: string) {

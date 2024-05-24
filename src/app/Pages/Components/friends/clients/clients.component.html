@@ -1,0 +1,29 @@
+<p-carousel
+  class="mobile"
+  [numVisible]="5"
+  [numScroll]="1"
+  [value]="imagesTop"
+  [showIndicators]="false"
+  [circular]="true"
+>
+  <ng-template let-image pTemplate="item">
+    <div class="img-box">
+      <img [src]="'./assets/friends/' + image + '.png'" />
+    </div>
+  </ng-template>
+</p-carousel>
+
+<p-carousel
+  class="mobile"
+  [numVisible]="5"
+  [numScroll]="1"
+  [value]="imagesBot"
+  [showIndicators]="false"
+  [circular]="true"
+>
+  <ng-template let-image pTemplate="item">
+    <div class="img-box">
+      <img [src]="'./assets/friends/' + image + '.png'" />
+    </div>
+  </ng-template>
+</p-carousel>

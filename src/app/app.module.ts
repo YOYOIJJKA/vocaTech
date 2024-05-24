@@ -30,6 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { TagModule } from 'primeng/tag';
     HttpClientModule,
     CarouselModule,
     ButtonModule,
-    TagModule
+    TagModule,
+    MatSnackBarModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],

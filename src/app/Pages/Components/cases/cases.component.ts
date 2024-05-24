@@ -11,19 +11,19 @@ export class CasesComponent {
   cases = [
     {
       title: 'Ритейл',
-      text: 'few words',
+      text: 'Пара слов о ритейле',
     },
     {
       title: 'Банки',
-      text: 'few Words About Banks',
+      text: 'Пара слов о банках',
     },
     {
       title: 'Телеком',
-      text: 'few',
+      text: 'Пара слов о телекоме',
     },
     {
       title: 'Девелопмент',
-      text: 'few',
+      text: 'Пара слов о девелопменте',
     },
     {
       title: 'АЗС',
@@ -31,7 +31,7 @@ export class CasesComponent {
     },
     {
       title: 'Госучреждения',
-      text: 'Пара слов о гос',
+      text: 'Пара слов о госучреждениях',
     },
   ];
 
