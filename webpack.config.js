@@ -1,49 +1,73 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const { AngularWebpackPlugin } = require('@ngtools/webpack');
+const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { AngularWebpackPlugin } = require("@ngtools/webpack");
 
 module.exports = {
-  mode: 'production',
-  entry: './src/main.ts',
+  mode: "production",
+  entry: {
+    main: "./src/main.ts",
+  },
   output: {
-    filename: 'app.js',
-    path: path.resolve(__dirname, 'dist')
+    filename: "[name].[contenthash].js",
+    path: path.resolve(__dirname, "dist"),
   },
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: [".ts", ".js"],
   },
   module: {
     rules: [
       {
         test: /\.ts$/,
-        use: '@ngtools/webpack'
+        use: [
+          {
+            loader: "@ngtools/webpack",
+          },
+        ],
       },
       {
         test: /\.html$/,
-        use: 'html-loader'
+        loader: "html-loader",
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
-      }
-    ]
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+    ],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: "./src/index.html",
+      filename: "index.html",
+      inject: "body",
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash].css",
     }),
     new AngularWebpackPlugin({
-      tsconfig: './tsconfig.json'
-    })
+      tsConfigPath: "./tsconfig.app.json",
+      entryModule: path.resolve(__dirname, "src/app/app.module#AppModule"),
+    }),
   ],
-  devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist')
+  optimization: {
+    moduleIds: "deterministic",
+    runtimeChunk: "single",
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          chunks: "all",
+        },
+      },
     },
+  },
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
     compress: true,
     port: 4200,
-    historyApiFallback: true
-  }
+    historyApiFallback: true,
+  },
 };
