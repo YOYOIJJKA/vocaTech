@@ -10,14 +10,21 @@
   background: none;
   border: none;
 }
+.img-box {
+  top: 0;
+  // left: 48vw
+  // position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+}
 .woman {
-  width: 20vw;
-  height: 20vw;
-  object-fit: cover;
+  width: 40vw;
+  height: 30vw;
+  object-fit: fill;
   // object-position: top;
-  background-color: rgba(154, 211, 173, 0.25);
-  border: 5px rgba(154, 211, 173, 0.25);
-  border-radius: 50%;
+  // background-color: rgba(154, 211, 173, 0.25);
+  // border: 5px rgba(154, 211, 173, 0.25);
+  // border-radius: 50%;
   @media (max-width: 800px) {
     display: none;
   }
