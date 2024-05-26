@@ -3,7 +3,7 @@ import { Client } from '../Interfaces/client';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-export const URL = 'http://localhost:3000/';
+export const URL = 'https://vocatechback-yoyoijjka.amvera.io/';
 
 @Injectable({
   providedIn: 'root',
