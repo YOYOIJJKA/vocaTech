@@ -23,10 +23,7 @@ export class FooterComponent {
     private mailer: MailService
   ) {
     this.contactForm = formBuilder.group({
-      name: [
-        null,
-        [Validators.required, Validators.pattern(/^[А-ЯЁа-яёA-Za-z]+ [А-ЯЁа-яёA-Za-z]+ [А-ЯЁа-яёA-Za-z]+$/)],
-      ],
+      name: [null, [Validators.required]],
       email: [
         null,
         [
@@ -34,22 +31,8 @@ export class FooterComponent {
           Validators.pattern(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/),
         ],
       ],
-      TIN: [
-        null,
-        [
-          Validators.required,
-          Validators.pattern(/([0-9]){12}$/),
-          Validators.maxLength(12),
-        ],
-      ],
-      phone: [
-        null,
-        [
-          Validators.required,
-          Validators.pattern(/([0-9]){10}$/),
-          Validators.maxLength(10),
-        ],
-      ],
+      TIN: [null, [Validators.required]],
+      phone: [null, [Validators.required]],
       devices: [null, [Validators.required]],
       confirm: [null, [Validators.requiredTrue]],
     });
