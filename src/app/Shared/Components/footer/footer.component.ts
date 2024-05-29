@@ -25,7 +25,7 @@ export class FooterComponent {
     this.contactForm = formBuilder.group({
       name: [
         null,
-        [Validators.required, Validators.pattern('[A-Za-zА-Яа-яЁё]*')],
+        [Validators.required, Validators.pattern(/^[А-ЯЁа-яёA-Za-z]+ [А-ЯЁа-яёA-Za-z]+ [А-ЯЁа-яёA-Za-z]+$/)],
       ],
       email: [
         null,
