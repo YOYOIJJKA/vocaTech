@@ -1,4 +1,4 @@
-.adv-box {
+.advantage-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -6,7 +6,7 @@
     display: none;
   }
 }
-.small-adv {
+.small-advantage {
   width: 24%;
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@
     height: 100%;
   }
 }
-.carousel-adv {
+.carousel-advantage {
   display: none;
   @media (max-width: 800px) {
     display: block;
@@ -30,10 +30,10 @@ img {
   height: 50px;
   width: 50px;
 }
-.adv-title {
+.advantage-title {
   width: 100%;
 }
-.adv-text {
+.advantage-text {
   line-height: 150%;
   text-align: center;
   padding-top: 10%;
