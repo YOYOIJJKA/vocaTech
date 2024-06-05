@@ -31,6 +31,7 @@ import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { PrivacyPolicyComponent } from './Pages/privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     ImgContentComponent,
     VideoContentComponent,
     BlockContentComponent,
+    PrivacyPolicyComponent,
   ],
   imports: [
     BrowserModule,

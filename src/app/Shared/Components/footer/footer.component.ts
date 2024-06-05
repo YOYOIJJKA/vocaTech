@@ -51,4 +51,8 @@ export class FooterComponent {
     }
     this.viewportScroller.scrollToAnchor(element);
   }
+
+  navigateByUrl() {
+    this.router.navigateByUrl('privacy-policy')
+  }
 }

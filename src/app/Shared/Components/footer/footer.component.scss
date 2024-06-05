@@ -17,7 +17,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 40%;
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
     width: 98%;
   }
 }
@@ -27,8 +27,8 @@ form {
   justify-content: space-between;
   width: 100%;
   padding: 5%;
-  @media (max-width:800px) {
-    flex-direction: column;
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
   }
 }
 label {
@@ -43,7 +43,7 @@ section {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
     display: none;
   }
 }
@@ -60,15 +60,38 @@ section {
   display: flex;
   flex-direction: column;
   gap: calc(var(--font-size-var) * 5);
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
     gap: calc(var(--font-size-var) * 2);
+  }
+}
+.privacy-policy-pc {
+  width: 27%;
+  text-align: right;
+  color: rgba(212, 212, 212, 1);
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+.policy-hover {
+  user-select: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.privacy-policy-mobile {
+  display: none;
+  @media (max-width: 800px) {
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: rgba(212, 212, 212, 1);
   }
 }
 .content {
   display: flex;
   flex-direction: column;
   gap: calc(var(--font-size-var) * 8);
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
     gap: calc(var(--font-size-var) * 4);
   }
 }

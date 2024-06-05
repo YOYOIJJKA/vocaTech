@@ -78,7 +78,7 @@
     </form>
   </div>
   <div class="logo-container half">
-    <img class="big-logo" src="assets/logo.png" />
+    <img class="big-logo" src="assets/Voca-Logo.svg" />
     <div class="m jost restricted-width" style="text-align: center">
       Ваш проводник в мир речевой <br />
       аналитики
@@ -87,12 +87,43 @@
 </footer>
 
 <div class="grey-background footer-container">
-  <img class="big-logo" src="assets/logo.png" />
+  <div class="privacy-policy-mobile jost s">
+    <p>
+      Компания разработчик собственного ПО для анализа речи сотрудников
+      и производитель оборудования для записи
+    </p>
+    <p style="line-height: 200%">
+      ООО «Вока-Тек»<br />
+      ИНН: 7707411150 <br />
+      Телефон: 8-800-550-60-71 <br />
+      E-mail: info&#64;voca.tech <br />
+    </p>
+    <p class="policy-hover" (click)="navigateByUrl()">
+      Политика обработки конфиденциальных данных
+    </p>
+  </div>
+
   <div class="content">
     <div class="jost l white" *ngFor="let element of content">
       <span class="content-footer" (click)="navigate(element.elementId)">
         {{ element.label }}</span
       >
     </div>
+  </div>
+  <img class="big-logo" style="padding-left: 10vw" src="assets/Voca-Logo.svg" />
+  <div class="privacy-policy-pc jost s">
+    <p>
+      Компания разработчик собственного ПО для анализа речи сотрудников
+      и производитель оборудования для записи
+    </p>
+    <p style="line-height: 200%">
+      ООО «Вока-Тек»<br />
+      ИНН: 7707411150 <br />
+      Телефон: 8-800-550-60-71 <br />
+      E-mail: info&#64;voca.tech <br />
+    </p>
+    <p class="policy-hover" (click)="navigateByUrl()">
+      Политика обработки конфиденциальных данных
+    </p>
   </div>
 </div>
