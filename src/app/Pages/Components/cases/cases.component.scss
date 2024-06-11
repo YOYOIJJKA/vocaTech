@@ -9,13 +9,18 @@
     display: none;
   }
 }
-
+.right-indents {
+  padding-right: 10vw;
+  @media (max-width: 800px) {
+    padding-right: 5vw;
+  }
+}
 .mobile-case-box {
-    display: none;
-    @media (max-width: 800px) {
-        display: block;
-        width: 100% !important;
-    }
+  display: none;
+  @media (max-width: 800px) {
+    display: block;
+    width: 100% !important;
+  }
 }
 .small-case {
   width: 24.5%;
@@ -36,15 +41,57 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.button {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
+.cases-button {
+  width: 80%;
+  text-align: center;
+  border: 2px solid rgba(40, 148, 210, 1);
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 16px;
+  background: none;
+  &:active {
+    background-color: rgba(40, 148, 210, 0.25);
+  }
   @media (max-width: 800px) {
-    margin-top: 10%;
-    flex-direction: row;
+    width: 95vw;
   }
 }
 .case-text {
   color: black;
+}
+.case-item {
+  cursor: pointer;
+  &:hover {
+    color: rgba(40, 148, 210, 1);
+  }
+  @media (max-width: 800px) {
+    font-weight: 500;
+  }
+}
+.cases-img {
+  width: 60vw;
+  @media (max-width: 800px) {
+    width: 95vw;
+  }
+}
+.cases-list {
+  gap: 4vh;
+  flex-direction: column;
+  display: flex;
+  width: 40vw;
+  @media (max-width: 800px) {
+    width: 80vw;
+    gap: 2vh;
+  }
+}
+.cases-flex {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2vh;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: 2vh;
+  }
 }

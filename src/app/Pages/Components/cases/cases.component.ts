@@ -10,19 +10,19 @@ import { Router } from '@angular/router';
 export class CasesComponent {
   cases = [
     {
-      title: 'Ритейл',
+      title: 'РИТЕЙЛ',
       text: 'Пара слов о ритейле',
     },
     {
-      title: 'Банки',
+      title: 'БАНКИ',
       text: 'Пара слов о банках',
     },
     {
-      title: 'Телеком',
+      title: 'ТЕЛЕКОМ',
       text: 'Пара слов о телекоме',
     },
     {
-      title: 'Девелопмент',
+      title: 'ДЕВЕЛОПМЕНТ',
       text: 'Пара слов о девелопменте',
     },
     {
@@ -30,7 +30,7 @@ export class CasesComponent {
       text: 'Пара слов об АЗС',
     },
     {
-      title: 'Госучреждения',
+      title: 'ГОСУЧРЕЖДЕНИЯ',
       text: 'Пара слов о госучреждениях',
     },
   ];

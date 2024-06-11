@@ -1,6 +1,6 @@
 .cases {
   color: #ffa134;
-  padding-left: 20px;
+  padding-left: 10px;
   user-select: none;
   // &:hover {
   //   text-decoration: underline;
@@ -18,7 +18,7 @@
   flex-direction: row-reverse;
 }
 .woman {
-  width: vw;
+  width: 40vw;
   height: 25vw;
   object-fit: contain;
   // object-position: top;
@@ -31,9 +31,10 @@
 }
 .content-box {
   width: 18%;
-  padding: 2.5% 0.5% 1.5% 2.5%;
+  padding: 1.25% 0.5% 1.2% 1.25%;
   @media (max-width: 800px) {
     width: 45%;
+    padding: 5%;
   }
 }
 .pc-flex {

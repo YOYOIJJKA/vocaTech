@@ -1,5 +1,29 @@
-<h1><span class="montserrat xxl">Кейсы</span></h1>
+<h1 class="right-indents">
+  <span class="montserrat xxl" style="line-height: 120%"
+    >Преимущества речевой аналитики
+    <br />
+    Вока-Тек для вашей отрасли</span
+  >
+</h1>
 
+<p class="jost m right-indents">
+  Наши технологии позволяют бизнесу получать ценные инсайты из речевых данных
+  сотрудников. Это открывает новые возможности для увеличения продаж, улучшения
+  эффективности работы персонала и повышения лояльности клиентов.
+</p>
+<div class="cases-flex">
+  <div class="cases-list">
+    <ng-container *ngFor="let case of cases">
+      <div class="case-item xl jost">{{ case.title }}</div></ng-container
+    >
+    <button class="cases-button">
+      <span class="jost-500 l">Смотреть все кейсы</span>
+    </button>
+  </div>
+  <img class="cases-img shadow" src="/assets/cases-img.png" alt="" />
+</div>
+
+<!-- 
 <div class="case-box">
   <div class="small-case" *ngFor="let case of cases">
     <div class="shadow-small case">
@@ -51,4 +75,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->

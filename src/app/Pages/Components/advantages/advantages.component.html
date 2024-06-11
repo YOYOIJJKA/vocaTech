@@ -1,7 +1,15 @@
-<h1><span class="montserrat xxl">Почему нас выбирают?</span></h1>
+
+<h1>
+  <span class="montserrat xxl"
+    >Почему нас выбирают?</span
+  >
+</h1>
 
 <div class="advantage-box">
-  <div class="small-advantage shadow-small" *ngFor="let advantage of advantages">
+  <div
+    class="small-advantage shadow-small"
+    *ngFor="let advantage of advantages"
+  >
     <div>
       <img [src]="advantage.img" />
       <div class="advantage-title jost m">{{ advantage.title }}</div>
@@ -31,13 +39,15 @@
   [numScroll]="1"
 >
   <ng-template let-advantage pTemplate="item">
-    <div class="carousel" style="height: 98%;">
+    <div class="carousel" style="height: 98%">
       <div class="small-advantage shadow-small">
         <div>
           <img [src]="advantage.img" />
           <div class="advantage-title jost m">{{ advantage.title }}</div>
         </div>
-        <div class="advantage-text s host s shadow-small">{{ advantage.text }}</div>
+        <div class="advantage-text s host s shadow-small">
+          {{ advantage.text }}
+        </div>
       </div>
     </div>
   </ng-template>

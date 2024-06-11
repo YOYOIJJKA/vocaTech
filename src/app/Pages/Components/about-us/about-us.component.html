@@ -1,54 +1,60 @@
 <div class="shadow indents gap main-box">
   <div class="card">
-    <div class="half gap">
+    <div class="sixty gap">
       <h1>
         <span class="xxxl montserrat"
-          >Конвертируем речь сотрудника в продажи</span
+          >Речевая аналитика и аудиобейдж Вока-Тек для бизнеса</span
         >
       </h1>
       <p class="montserrat s">
-        <span class="highlighted">Наш главный принцип</span>
-        – индивидуальный подход к проектам, автоматизация процессов и постоянное
-        совершенствование системы
+        <span class="highlighted">Конвертируем речь сотрудников в продажи</span>
       </p>
-      <div class="flexbox-align-center">
-        <button class="contact-button" mat-flat-button color="primary" (click)="navigate('footer')">
-          <span class="s jost white">Связаться с нами</span>
+      <div class="flexbox-align-center mobile-flex-column">
+        <button
+          class="contact-button"
+          mat-flat-button
+          color="primary"
+          (click)="navigate('footer')"
+        >
+          <span class="l jost white">Заказать консультацию</span>
         </button>
         <button class="cases-button" (click)="navigateToCases()" disabled>
-        <span class="cases jost l">Кейсы →</span>
-      </button>
+          <span class="cases jost-500 l">Смотреть кейсы →</span>
+        </button>
       </div>
     </div>
     <div class="half img-box">
-      <img class="woman" src="./assets/hands.png"/>
+      <img class="woman" src="./assets/woman.png" />
     </div>
   </div>
   <div class="pc-flex content-flex">
     <div class="shadow-small content-box" *ngFor="let aboutUs of firstBox">
-      <span class="green-box-header jost-500 xxl">{{ aboutUs.title }}</span>
-      <p class="jost xxs restricted-width">{{ aboutUs.text }}</p>
+      <span class="green-box-header jost-500 xxl">{{ aboutUs.title }}</span
+      ><br />
+      <span class="jost xxs restricted-width">{{ aboutUs.text }}</span>
     </div>
     <div
       class="content-box blue-background shadow-small"
       *ngFor="let aboutUs of secondBox"
     >
-      <span class="jost-500 xxl">{{ aboutUs.title }}</span>
-      <p class="jost xxs restricted-width">{{ aboutUs.text }}</p>
+      <span class="jost-500 xxl">{{ aboutUs.title }}</span> <br />
+      <span class="jost xxs restricted-width">{{ aboutUs.text }}</span>
     </div>
   </div>
 </div>
 
 <div class="mobile-flex content-flex">
   <div class="shadow-small content-box" *ngFor="let aboutUs of firstBox">
-    <span class="green-box-header jost-500 xxl">{{ aboutUs.title }}</span>
-    <p class="jost xxs restricted-width">{{ aboutUs.text }}</p>
+    <span class="green-box-header jost-500 xxl">{{ aboutUs.title }}</span
+    ><br />
+    <span class="jost xxs restricted-width">{{ aboutUs.text }}</span>
   </div>
   <div
     class="content-box blue-background shadow-small"
     *ngFor="let aboutUs of secondBox"
   >
-    <span class="jost-500 xxl">{{ aboutUs.title }}</span>
-    <p class="jost xxs restricted-width">{{ aboutUs.text }}</p>
+    <span class="jost-500 xxl">{{ aboutUs.title }}</span
+    ><br />
+    <span class="jost xxs restricted-width">{{ aboutUs.text }}</span>
   </div>
 </div>

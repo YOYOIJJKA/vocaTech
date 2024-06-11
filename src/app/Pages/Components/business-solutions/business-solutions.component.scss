@@ -12,10 +12,20 @@
   @media (max-width: 800px) {
     padding: 2.5%;
   }
+  &:hover {
+    .arrow {
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+  }
 }
 .title-card-big {
   @extend .title-card;
   padding: 5%;
+  .arrow {
+    margin-left: 95%;
+  }
 }
 .element-box {
   display: flex;
@@ -39,7 +49,7 @@
 .wide-mobile {
   @media (max-width: 800px) {
     width: 100%;
-  } 
+  }
 }
 .content-card {
   // padding-top: 5%;
@@ -61,8 +71,11 @@ li::marker {
   color: rgba(181, 50, 138, 1);
 }
 .arrow {
-  width: 100%;
-  text-align: end;
+  width: fit-content;
+  margin-left: 90%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
   color: rgba(181, 50, 138, 1);
 }
 .mobile {
@@ -72,5 +85,5 @@ li::marker {
   }
 }
 h1 {
-    width: fit-content;
+  width: fit-content;
 }
