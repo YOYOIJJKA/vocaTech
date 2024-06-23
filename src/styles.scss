@@ -92,13 +92,18 @@ html {
   height: 100%;
   width: 100%;
 }
+.big-indents {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5% !important;
+  gap: 2vw;
+}
 .indents {
-  width: 99%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
   @media (max-width: 800px) {
-    width: 96%;
   }
 }
 footer {
@@ -163,7 +168,7 @@ footer {
   }
 }
 .xxxl {
-  font-size: calc(var(--font-size-var) * 16);
+  font-size: calc(var(--font-size-var) * 12);
   @media (max-width: 800px) {
     font-size: calc(var(--font-size-var) * 7);
   }
@@ -195,13 +200,16 @@ footer {
 }
 .sixty {
   width: 60%;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 }
 .contact-button {
   width: 30vw;
   height: 80px !important;
   border-radius: 1rem !important;
   @media (max-width: 800px) {
-    width: 80vw;
+    width: 100%;
     max-height: 40px !important;
     border-radius: 15px !important;
   }
@@ -239,9 +247,7 @@ footer {
 .gap {
   display: flex;
   flex-direction: column;
-  gap: 40px;
   @media (max-width: 800px) {
-    width: 94%;
     gap: 0px;
   }
 }
@@ -264,7 +270,9 @@ footer {
   align-items: center;
 }
 .mobile-flex-column {
+  padding-top: 80px;
   @media (max-width: 800px) {
+    padding-top: 40px;
     flex-direction: column;
   }
   gap: 1vh;
@@ -350,6 +358,7 @@ footer {
   background-color: #2894d226;
   border: 5px #2894d226;
   padding: 5px;
+  line-height: 160%;
   border-radius: 1rem;
   @media (max-width: 800px) {
     padding: 2px;

@@ -55,7 +55,7 @@
     background-color: rgba(40, 148, 210, 0.25);
   }
   @media (max-width: 800px) {
-    width: 95vw;
+    width: 100%
   }
 }
 .case-text {
@@ -73,7 +73,7 @@
 .cases-img {
   width: 60vw;
   @media (max-width: 800px) {
-    width: 95vw;
+    width: 100%;
   }
 }
 .cases-list {
@@ -82,7 +82,7 @@
   display: flex;
   width: 40vw;
   @media (max-width: 800px) {
-    width: 80vw;
+    width: 100%;
     gap: 2vh;
   }
 }

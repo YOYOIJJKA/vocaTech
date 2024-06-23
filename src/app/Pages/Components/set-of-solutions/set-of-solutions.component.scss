@@ -23,7 +23,8 @@ img {
   padding-left: 2.5%;
   padding-bottom: 5%;
   flex: 1 0 calc(28%);
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
+    flex: 40%;
     padding-bottom: 2.5%;
     padding-left: 5%;
   }
@@ -34,7 +35,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
     width: 100%;
   }
 }

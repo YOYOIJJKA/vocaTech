@@ -73,6 +73,7 @@ section {
   }
 }
 .policy-hover {
+  cursor: pointer;
   user-select: none;
   &:hover {
     text-decoration: underline;
